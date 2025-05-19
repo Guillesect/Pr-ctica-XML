@@ -2,7 +2,7 @@ let startTime;
 let timerInterval;
 let currentQuestions;
 let currentQuestionIndex = 0;
-let userAnswers = new Map(); // Para almacenar las respuestas
+let userAnswers = new Map(); 
 
 document.addEventListener('DOMContentLoaded', () => {
     loadQuestions('es');
@@ -112,7 +112,6 @@ function displayCurrentQuestion() {
     
     container.appendChild(questionDiv);
 
-    // Añadir event listener para guardar la respuesta cuando se selecciona
     const radioButtons = questionDiv.querySelectorAll('input[type="radio"]');
     radioButtons.forEach(radio => {
         radio.addEventListener('change', () => {
@@ -176,7 +175,6 @@ function checkAnswers() {
     const totalQuestions = currentQuestions.length;
     const lang = document.getElementById('language').value;
     
-    // Guardamos la respuesta actual antes de verificar
     const currentQuestion = currentQuestions[currentQuestionIndex];
     if (currentQuestion) {
         const questionId = currentQuestion.getAttribute('id');
@@ -186,7 +184,6 @@ function checkAnswers() {
         }
     }
     
-    // Verificamos todas las respuestas guardadas
     for (let i = 0; i < currentQuestions.length; i++) {
         const question = currentQuestions[i];
         const questionId = question.getAttribute('id');
@@ -200,14 +197,12 @@ function checkAnswers() {
             }
         }
     }
-    
-    // Ocultamos el botón de enviar respuestas
+
     const enviarRespuestasButton = document.querySelector('button.nav-button[onclick="checkAnswers()"], button.nav-button[onclick="Enviar respuestas"]');
     if (enviarRespuestasButton) {
         enviarRespuestasButton.style.display = 'none';
     }
     
-    // También ocultamos el botón con id 'submit'
     const submitButton = document.getElementById('submit');
     if (submitButton) {
         submitButton.style.display = 'none';
