@@ -1,0 +1,7 @@
+<!ELEMENT cuestionario (pregunta+)>
+<!ELEMENT pregunta (enunciado, respuestas)>
+<!ELEMENT enunciado (#PCDATA)>
+<!ELEMENT respuestas (respuesta+)>
+<!ELEMENT respuesta (#PCDATA)>
+<!ATTLIST pregunta id ID #REQUIRED>
+<!ATTLIST respuesta correcta (true|false) #REQUIRED>

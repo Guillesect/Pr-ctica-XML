@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE cuestionario SYSTEM "preguntas.dtd">
+<test>
+  <question id="1">
+    <wording>Who has the most NBA championships as a player?</wording>
+    <choices>
+      <choice>Michael Jordan</choice>
+      <choice>Magic Johnson</choice>
+      <choice correct="yes">Bill Russell</choice>
+      <choice>Kobe Bryant</choice>
+    </choices>
+  </question>
+  <question id="2">
+    <wording>Which team won the NBA in 2023?</wording>
+    <choices>
+      <choice>Golden State Warriors</choice>
+      <choice correct="yes">Denver Nuggets</choice>
+      <choice>Miami Heat</choice>
+      <choice>Milwaukee Bucks</choice>
+    </choices>
+  </question>
+  <question id="3">
+    <wording>Which player is nicknamed "The King"?</wording>
+    <choices>
+      <choice>Kobe Bryant</choice>
+      <choice>Stephen Curry</choice>
+      <choice correct="yes">LeBron James</choice>
+      <choice>Kevin Durant</choice>
+    </choices>
+  </question>
+  <question id="4">
+    <wording>In what year was the NBA founded?</wording>
+    <choices>
+      <choice>1956</choice>
+      <choice>1941</choice>
+      <choice correct="yes">1946</choice>
+      <choice>1962</choice>
+    </choices>
+  </question>
+  <question id="5">
+    <wording>How long is an NBA game?</wording>
+    <choices>
+      <choice correct="yes">48 minutes</choice>
+      <choice>40 minutes</choice>
+      <choice>60 minutes</choice>
+      <choice>45 minutes</choice>
+    </choices>
+  </question>
+  <question id="6">
+    <wording>Which team has the most NBA championships?</wording>
+    <choices>
+      <choice>Chicago Bulls</choice>
+      <choice correct="yes">Boston Celtics</choice>
+      <choice>Miami Heat</choice>
+      <choice>San Antonio Spurs</choice>
+    </choices>
+  </question>
+  <question id="7">
+    <wording>What is the record for most points in a single NBA game?</wording>
+    <choices>
+      <choice>73</choice>
+      <choice correct="yes">100</choice>
+      <choice>81</choice>
+      <choice>92</choice>
+    </choices>
+  </question>
+  <question id="8">
+    <wording>Who scored 100 points in an NBA game?</wording>
+    <choices>
+      <choice correct="yes">Wilt Chamberlain</choice>
+      <choice>Shaquille O'Neal</choice>
+      <choice>Dirk Nowitzki</choice>
+      <choice>Allen Iverson</choice>
+    </choices>
+  </question>
+  <question id="9">
+    <wording>Who is the all-time leader in assists?</wording>
+    <choices>
+      <choice>Jason Kidd</choice>
+      <choice correct="yes">John Stockton</choice>
+      <choice>Chris Paul</choice>
+      <choice>Magic Johnson</choice>
+    </choices>
+  </question>
+  <question id="10">
+    <wording>In which city do the Lakers play?</wording>
+    <choices>
+      <choice correct="yes">Los Angeles</choice>
+      <choice>Chicago</choice>
+      <choice>Miami</choice>
+      <choice>Houston</choice>
+    </choices>
+  </question>
+  <question id="11">
+    <wording>How many teams are there in the NBA?</wording>
+    <choices>
+      <choice>28</choice>
+      <choice>34</choice>
+      <choice>32</choice>
+      <choice correct="yes">30</choice>
+    </choices>
+  </question>
+  <question id="12">
+    <wording>Who won the 2022–2023 NBA MVP?</wording>
+    <choices>
+      <choice>Joel Embiid</choice>
+      <choice>Giannis Antetokounmpo</choice>
+      <choice correct="yes">Nikola Jokić</choice>
+      <choice>Luka Dončić</choice>
+    </choices>
+  </question>
+  <question id="13">
+    <wording>Which player popularized the three-point shot?</wording>
+    <choices>
+      <choice>Ray Allen</choice>
+      <choice correct="yes">Stephen Curry</choice>
+      <choice>James Harden</choice>
+      <choice>Reggie Miller</choice>
+    </choices>
+  </question>
+  <question id="14">
+    <wording>How many players are on the court per team?</wording>
+    <choices>
+      <choice>4</choice>
+      <choice correct="yes">5</choice>
+      <choice>6</choice>
+      <choice>7</choice>
+    </choices>
+  </question>
+  <question id="15">
+    <wording>Which country is Manu Ginóbili from?</wording>
+    <choices>
+      <choice>Spain</choice>
+      <choice>Italy</choice>
+      <choice correct="yes">Argentina</choice>
+      <choice>Brazil</choice>
+    </choices>
+  </question>
+  <question id="16">
+    <wording>Which team drafted Michael Jordan?</wording>
+    <choices>
+      <choice correct="yes">Chicago Bulls</choice>
+      <choice>Los Angeles Lakers</choice>
+      <choice>Boston Celtics</choice>
+      <choice>New York Knicks</choice>
+    </choices>
+  </question>
+  <question id="17">
+    <wording>How many points is a three-point shot worth?</wording>
+    <choices>
+      <choice>1</choice>
+      <choice>2</choice>
+      <choice correct="yes">3</choice>
+      <choice>4</choice>
+    </choices>
+  </question>
+  <question id="18">
+    <wording>Which team has a mascot named “Benny the Bull”?</wording>
+    <choices>
+      <choice>Miami Heat</choice>
+      <choice correct="yes">Chicago Bulls</choice>
+      <choice>Brooklyn Nets</choice>
+      <choice>Toronto Raptors</choice>
+    </choices>
+  </question>
+  <question id="19">
+    <wording>Who was known as "Black Mamba"?</wording>
+    <choices>
+      <choice correct="yes">Kobe Bryant</choice>
+      <choice>LeBron James</choice>
+      <choice>Allen Iverson</choice>
+      <choice>Paul Pierce</choice>
+    </choices>
+  </question>
+  <question id="20">
+    <wording>Which team was originally the "Seattle SuperSonics"?</wording>
+    <choices>
+      <choice>Portland Trail Blazers</choice>
+      <choice correct="yes">Oklahoma City Thunder</choice>
+      <choice>Utah Jazz</choice>
+      <choice>Houston Rockets</choice>
+    </choices>
+  </question>
+</test>
+
