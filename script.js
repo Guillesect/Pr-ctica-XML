@@ -53,6 +53,7 @@ function updateTimer() {
     const diff = currentTime - startTime;
     const minutes = Math.floor(diff / 60000);
     const seconds = Math.floor((diff % 60000) / 1000);
+    // Formatea el tiempo como 00:00
     document.getElementById('timer').textContent = 
         `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 }
@@ -61,11 +62,11 @@ function resetTimer() {
     clearInterval(timerInterval);
     startTimer();
 }
-
+//pregunta actual
 function displayCurrentQuestion() {
     const container = document.getElementById('quiz-container');
     container.innerHTML = '';
-    
+    // Si no hay más preguntas, evalúa resultados
     if (currentQuestionIndex >= currentQuestions.length) {
         checkAnswers();
         return;
@@ -73,19 +74,20 @@ function displayCurrentQuestion() {
     
     const lang = document.getElementById('language').value;
     const question = currentQuestions[currentQuestionIndex];
-    const questionDiv = document.createElement('div');
+    const questionDiv = document.createElement('div'); //Crea un nuevo elemento div que contendrá toda la estructura de la pregunta. Este div será el contenedor principal para los elementos de la pregunta
     questionDiv.className = 'question';
     
     const questionId = question.getAttribute('id');
     const savedAnswer = userAnswers.get(questionId);
     
     questionDiv.innerHTML = `
-        <p class="question-counter">
+        <p class="question-counter"> //nº preguntas actual y total
             ${lang === 'en' ? 'Question' : 'Pregunta'} ${currentQuestionIndex + 1} 
             ${lang === 'en' ? 'of' : 'de'} ${currentQuestions.length}
         </p>
         <p class="question-text">${question.getElementsByTagName('wording')[0].textContent}</p>
         ${Array.from(question.getElementsByTagName('choice')).map((choice, idx) => {
+            // Marca como seleccionada la opción guardada previamente
             const isChecked = savedAnswer === idx.toString() ? 'checked' : '';
             return `
                 <div class="choice-container">
@@ -111,7 +113,7 @@ function displayCurrentQuestion() {
     `;
     
     container.appendChild(questionDiv);
-
+  // Agrega listeners a los radio buttons
     const radioButtons = questionDiv.querySelectorAll('input[type="radio"]');
     radioButtons.forEach(radio => {
         radio.addEventListener('change', () => {
